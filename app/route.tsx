@@ -47,7 +47,6 @@ export async function GET(request: NextRequest) {
                 style={{
                     textTransform: "uppercase",
                     fontSize: "2rem",
-                    fontStyle: "italic",
                 }}
             >
                 {name}
@@ -64,7 +63,6 @@ export async function GET(request: NextRequest) {
                 style={{
                     textTransform: "uppercase",
                     fontSize: "2rem",
-                    fontStyle: "italic",
                 }}
             >
                 {award}
