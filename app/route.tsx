@@ -9,7 +9,7 @@ export async function GET(request: NextRequest) {
     ).then((res) => res.arrayBuffer());
     const { searchParams } = request.nextUrl;
     const name = searchParams.get("name") || "you";
-    const reason = searchParams.get("reason") || "being single";
+    const award = searchParams.get("award") || "being single";
     
     return new ImageResponse(
         <div
@@ -67,7 +67,7 @@ export async function GET(request: NextRequest) {
                     fontStyle: "italic",
                 }}
             >
-                {reason}
+                {award}
             </p>
         </div>,
         {
